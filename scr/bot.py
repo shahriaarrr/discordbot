@@ -32,6 +32,7 @@ async def cmd(ctx, * ,values):
     await ctx.send("password: "+password+"\n"+"name: "+name)
 
 @client.command(pass_context = True)
+@commands.has_permissions(manage_messages = True)
 async def clear(ctx, amount = 100):
     await ctx.channel.purge(limit = amount)
     await ctx.send("Chat Cleared")
