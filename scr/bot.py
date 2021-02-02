@@ -12,6 +12,8 @@ client.remove_command('help')
 
 @client.event
 async def on_ready():
+    await client.change_presence(status = discord.Status.dnd,
+    activity = discord.Game("With Discord Bots"))
     print("Bot Online....")
 
 
