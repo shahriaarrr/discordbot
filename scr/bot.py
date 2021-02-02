@@ -4,7 +4,7 @@ from asyncio import *
 from random import randint
 
 class CONFING:
-    TOKEN = 'ODA1NDM1MDMwOTM5MzY5NDcy.YBa10w.fFeuxsDkAmP4QTY7nylREBqPd28'
+    TOKEN = 'TOKEN OF YOUR BOT'
     PREFIX = '-'
 
 client = commands.Bot(command_prefix = CONFING.PREFIX)
