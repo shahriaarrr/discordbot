@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from asyncio import *
-from random import randint
+from random import randint,choice
 
 class CONFING:
     TOKEN = 'BOT TOKEN'
