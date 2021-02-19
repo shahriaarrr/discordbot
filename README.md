@@ -19,8 +19,8 @@
 
 9.7-Finally, I hope you use this program properly and enjoy working with it 😉
 
-### [!] Thanks to:
-1.Special thanks to my dear friend, brother and mentor [Amir Hossein](https://www.linkedin.com/in/amirtoday)for his help and suggestions for this project.🙏
+###  Thanks to:
+1.Special thanks to my dear friend, brother and mentor [Amir Hossein](https://www.linkedin.com/in/amirtoday)for his help and suggestions for this project🧡🙏.
 
 2.2.Also, my dear friend [Matin](https://github.com/ThisIsMatin), for his good education and help that he gave me🙏
 
