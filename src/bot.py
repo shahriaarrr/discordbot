@@ -19,6 +19,18 @@ async def on_ready():
     activity = discord.Game("With Discord Bots"))
     print("Bot Online....")
 
+#join member's message
+@client.event
+async def on_ready():
+    await client.change_presence(status = discord.Status.dnd,
+    activity = discord.Activity(type = discord.ActivityType.watching, name = "توسعه گر😁"))
+    print("Bot Online....")
+
+#left or remove member's message
+@client.event
+async def on_member_join(member):
+   await client.get_channel(805436123546386514).send(f"{member.name} has joined")
+
 
 @client.command()
 async def salam(ctx):
