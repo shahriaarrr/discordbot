@@ -31,6 +31,20 @@ async def on_ready():
 async def on_member_join(member):
    await client.get_channel(805436123546386514).send(f"{member.name} has joined")
 
+#kick command
+@client.command()
+@commands.has_permissions(manage_messages = True)
+async def kick(ctx, member : discord.Member, *, reason = None ):
+    await member.kick(reason = reason)
+    await ctx.send(f"Kicked {member.mention}")
+
+#ban command
+@client.command()
+@commands.has_permissions(manage_messages = True)
+async def ban(ctx, member : discord.Member, *, reason = None ):
+    await member.ban(reason = reason)
+    await ctx.send(f"Banned {member.mention}")
+
 
 @client.command()
 async def salam(ctx):
