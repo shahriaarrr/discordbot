@@ -3,13 +3,16 @@ from discord.ext import commands
 from asyncio import *
 from random import randint,choice
 
+#create your bot class
 class CONFING:
     TOKEN = 'BOT TOKEN'
     PREFIX = '-'
 
 client = commands.Bot(command_prefix = CONFING.PREFIX)
+#remove the difult help command
 client.remove_command('help')
 
+#to show you when your bot ready to work
 @client.event
 async def on_ready():
     await client.change_presence(status = discord.Status.dnd,
@@ -132,7 +135,7 @@ async def random_embed(ctx):
     await ctx.send(embed = x)
 
 
-
+#clear all of message in text channel
 @client.command(pass_context = True)
 @commands.has_permissions(manage_messages = True)
 async def clear(ctx, amount = 100):
@@ -142,5 +145,5 @@ async def clear(ctx, amount = 100):
 
 
 
-
+#run your bot
 client.run(CONFING.TOKEN)
