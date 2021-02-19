@@ -39,6 +39,7 @@ async def cmd(ctx, * ,values):
 
 
 @client.command()
+#If you want to use a command only for admins, you must type the following command before defining the function
 @commands.has_permissions(manage_messages = True)
 async def setstatus(ctx, status_type):
     #Admin command
