@@ -91,7 +91,7 @@ async def setactivity(ctx, activity_type, * ,activity_text):
 
 
 @client.command()
-async def random_advice(ctx):
+async def random_embed(ctx):
     colors = [ 
         #Put all your favorite colors in this list below(0x{your color's HTML code})
         0x19D8E5, 
