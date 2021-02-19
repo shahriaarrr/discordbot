@@ -92,39 +92,30 @@ async def setactivity(ctx, activity_type, * ,activity_text):
 @client.command()
 async def advice(ctx):
     colors = [ 
+        #Put all your favorite colors in this list below(0x{your color's HTML code})
         0x19D8E5, 
-        0xFFFFFF, 
-        0x41C941,
-        0xE8E811,
-        0xC318E9,
-        0xE51515,
     ]
-    steve_jobs = [
-        'Don’t let the noise of others’ opinions drown out your own inner voice.',
-        'Why join the navy if you can be a pirate',
-        'Were just enthusiastic about what we do',
-        'Its not a faith in technology. Its faith in people',
+    text = [
+        "List the texts needed to display your embed in this way",
     ]
-    bill_gates = [
-        'Success is a lousy teacher. It seduces smart people into thinking they can’t lose.',
-        'I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.',
-        'To win big, you sometimes have to take big risks',
-        'If you are born poor its not your mistake, But if you die poor its your mistake.',
+    text2 = [
+        "List the texts needed to display your embed in this way",
     ]
     m1 = discord.Embed(
-        title = 'Bill Gates said:',
-        description = choice(bill_gates),
+        title = 'text 1',
+        description = choice(text),
         color = choice(colors)
     )
     m2 = discord.Embed(
-        title = 'Steve Jobs said:',
-        description = choice(steve_jobs),
+        title = 'text 2',
+        description = choice(text2),
         colors = choice(colors),
     )
 
     m_all = [m1, m2]
     x = choice(m_all)
-    x.set_footer(text = 'advice')
+    x.set_footer(text = 'your text')
+    x.set_image(url = "your image's URL")
 
     await ctx.send(embed = x)
 
