@@ -89,11 +89,22 @@ async def setactivity(ctx, activity_type, * ,activity_text):
         #unknown command
         await ctx.send("%s Unknown Activity(%s)" % (mention, activity_type))
 
+#embed
+@client.command()
+async def embed(ctx):
+    embed1 = discord.Embed(
+        title = "your embed's title",
+        description = "your embed's description",
+        #Put all your favorite colors in this list below(0x{your color's HTML code})
+        colour = 0x19D8E5,
+    )
+
+    # await ctx.send(embed = {your embed name})
+    await ctx.send(embed = embed1)
 
 @client.command()
 async def random_embed(ctx):
     colors = [ 
-        #Put all your favorite colors in this list below(0x{your color's HTML code})
         0x19D8E5, 
     ]
     text = [
