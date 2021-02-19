@@ -1,7 +1,5 @@
 # discordbot
-=================================
-![python](3.9.0)
---------------------------------------------------------------------
+
 ### [!] Some Notes:
 1.First of all, go to src folder and install requirements by 'pip3 install -r requirements.txt' then run the Cli version by 'python3 bot.py'
 
