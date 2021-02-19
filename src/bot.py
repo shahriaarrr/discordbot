@@ -45,11 +45,11 @@ async def ban(ctx, member : discord.Member, *, reason = None ):
     await member.ban(reason = reason)
     await ctx.send(f"Banned {member.mention}")
 
-
+#say Hi
 @client.command()
-async def salam(ctx):
+async def hi(ctx):
     mention = ctx.author.mention
-    await ctx.send("salam %s" % (mention))
+    await ctx.send("Hi %s🙋‍♂️" % (mention))
 
 
 @client.command()
@@ -58,7 +58,7 @@ async def taas(ctx):
     x = randint(1, 6)
     await ctx.send("Your number is: %i" % (x))
 
-
+#you can set your name and pass((just a game))
 @client.command()
 async def cmd(ctx, * ,values):
     values = values.split()
@@ -66,7 +66,7 @@ async def cmd(ctx, * ,values):
     name = values[1]
     await ctx.send("password: "+password+"\n"+"name: "+name)
 
-
+#set your bot's status
 @client.command()
 #If you want to use a command only for admins, you must type the following command before defining the function
 @commands.has_permissions(manage_messages = True)
@@ -85,7 +85,7 @@ async def setstatus(ctx, status_type):
         await client.change_presence(status = discord.Status.online)
         await ctx.send("status change to --> online")
 
-
+#set your bot's activity
 @client.command()
 @commands.has_permissions(manage_messages = True)
 async def setactivity(ctx, activity_type, * ,activity_text):
@@ -169,6 +169,28 @@ async def clear(ctx, amount = 100):
     await ctx.channel.purge(limit = amount)
     await ctx.send("Chat Cleared")
 
+
+@client.command()
+async def about(ctx):
+    aboutme = '''
+    Hi, I'm Shahriar🙋‍♂️
+
+    🤖(bot.py)'s father
+
+    💻Computer engineering student
+
+    👨‍💻Python Developer
+
+    ✒Sometimes the author 
+
+    🔗All links related to me: https://zil.ink/shahriaarrr12
+    '''
+    m1 = discord.Embed(
+        title = "programmer of this project",
+        description = aboutme,
+        color = 0x51F349,
+    )
+    await ctx.send(embed = m1)
 
 
 #run your bot
