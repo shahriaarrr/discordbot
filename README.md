@@ -1,9 +1,9 @@
 # discordbot
 
 ### [!] Some Notes:
-1.First of all, go to src folder and install requirements by 'pip3 install -r requirements.txt' then run the Cli version by 'python3 bot.py'
+1.First of all, go to src folder and install requirements by `pip3 install -r requirements.txt` then run the program by `python3 bot.py`
 
-2.you need create your bot in [discord developer portal](https://discord.com/developers)link and then copy your bot token and Then paste in the location specified in the file (bot.py)((you can see [this](https://www.youtube.com/watch?v=nW8c7vT6Hl4&list=PLW3GfRiBCHOhfVoiDZpSz8SM_HybXRPzZ) video to learn how create discord bot))
+2.you need create your bot in [discord developer portal](https://discord.com/developers) link and then copy your bot token and Then paste in the location specified in the file (bot.py)((you can see [this](https://www.youtube.com/watch?v=nW8c7vT6Hl4&list=PLW3GfRiBCHOhfVoiDZpSz8SM_HybXRPzZ) video to learn how create discord bot))
 
 3.This program is not really my main discord bot🤖. It is a template that I have followed to write my own discord bot.
 
@@ -20,7 +20,7 @@
 9.7-Finally, I hope you use this program properly and enjoy working with it 😉
 
 ###  Thanks to:
-1.Special thanks to my dear friend, brother and mentor [Amir Hossein](https://www.linkedin.com/in/amirtoday)for his help and suggestions for this project🧡🙏.
+1.Special thanks to my dear friend, brother and mentor [Amir Hossein](https://www.linkedin.com/in/amirtoday) for his help and suggestions for this project🧡🙏.
 
 2.2.Also, my dear friend [Matin](https://github.com/ThisIsMatin), for his good education and help that he gave me🙏
 
