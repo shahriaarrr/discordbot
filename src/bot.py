@@ -45,7 +45,7 @@ async def ban(ctx, member : discord.Member, *, reason = None ):
     await member.ban(reason = reason)
     await ctx.send(f"Banned {member.mention}")
 
-
+#unban command
 @client.command()
 @commands.has_permissions(manage_messages=True)
 async def unban(ctx, user : discord.User):
