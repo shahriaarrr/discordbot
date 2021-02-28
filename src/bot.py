@@ -45,6 +45,18 @@ async def ban(ctx, member : discord.Member, *, reason = None ):
     await member.ban(reason = reason)
     await ctx.send(f"Banned {member.mention}")
 
+
+@client.command()
+@commands.has_permissions(manage_messages=True)
+async def unban(ctx, user : discord.User):
+    guild = ctx.guild
+    bans = await ctx.guild.bans()
+    for i in bans:
+        if(user in i):  
+            await guild.unban(user=user)
+            await ctx.send(f'{user.mention} Successfully Unbanned From Server')
+
+
 #say Hi
 @client.command()
 async def hi(ctx):
