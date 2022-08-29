@@ -1,11 +1,17 @@
 import discord
 from discord.ext import commands
 from asyncio import *
+from dotenv import load_dotenv
+import os
 from random import randint,choice
+
+#get data from .env file
+load_dotenv()
+
 
 #create your bot class
 class CONFING:
-    TOKEN = 'BOT TOKEN'
+    TOKEN = os.getenv('TOKEN')
     PREFIX = '-'
 
 client = commands.Bot(command_prefix = CONFING.PREFIX)
