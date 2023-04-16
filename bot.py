@@ -19,6 +19,8 @@ bot_extentions = (
     'cogs.admin.role',
     'cogs.admin.kick',
     'cogs.admin.timeout',
+
+    'cogs.contact_forms.staff',
 )
 
 class MyBot(commands.Bot):
