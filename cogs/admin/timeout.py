@@ -42,7 +42,7 @@ class Timeout(Cog):
             description=f"{member.mention} has been successfully timeouted for `{day}` days and `{hour}` hours and `{minute}` minutes in the server"
         )
         await ctx.send(embed=embed)
-        await ctx.bot.get_channel(1084038897761263636).send(embed=timeout_embed)
+        await ctx.bot.get_channel(channel_id).send(embed=timeout_embed)
         
 
 
