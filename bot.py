@@ -15,7 +15,8 @@ bot_extentions = (
     'cogs.about.about',
 
     'cogs.admin.channel',
-    
+    'cogs.admin.clear',
+
 )
 
 class MyBot(commands.Bot):
