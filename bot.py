@@ -12,7 +12,7 @@ extentions:
     In this version of the robot, we consider all the Cogs as a tuple called extentions and load this tuple.
 '''
 bot_extentions = (
-    
+    'cogs.about.about',
 )
 
 class MyBot(commands.Bot):
