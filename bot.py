@@ -16,6 +16,7 @@ bot_extentions = (
 
     'cogs.admin.channel',
     'cogs.admin.clear',
+    'cogs.admin.role',
 
 )
 
