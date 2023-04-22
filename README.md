@@ -53,6 +53,6 @@ $ python main.py
 
 ###  Thanks to:
 
-1. my dear friend **SECTOR**, for his good education and help that he gave me🙏
+1. my dear friend **[SCARTAL](https://github.com/SCARTAL/)**, for his good education and help that he gave me🙏
 
 2. **boby cloud** for his advice and mentorship to improve this README
