@@ -8,6 +8,8 @@ This is a moderation bot for Discord servers that provides several features to h
 
 - Locking channels
 
+- send announce message
+
 - Giving a role to the user
 
 - Removing a role from the user
