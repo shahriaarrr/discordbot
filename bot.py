@@ -19,6 +19,7 @@ bot_extentions = (
     'cogs.admin.role',
     'cogs.admin.kick',
     'cogs.admin.timeout',
+    'cogs.admin.announceEmbed',
 
     'cogs.contact_forms.staff',
 )

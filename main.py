@@ -26,7 +26,7 @@ my_bot = bot.MyBot(
     command_prefix='$',
     intents=intents,
     allowed_mentions=discord.AllowedMentions(everyone=False, roles=False),
-    activity=discord.Activity(type=ActivityType.watching, name="Agah discord server"),
+    activity=discord.Activity(type=ActivityType.watching, name="your_custom_status"),
     status=discord.Status.dnd,
     help_command=None,
 )

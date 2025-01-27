@@ -28,15 +28,15 @@ class About(Cog):
         await ctx.send(embed=about_embed)
 
     #about your discord server
-    @hybrid_command(name="agah", description="about this discord server")
-    async def agah(self, ctx: Context):
+    @hybrid_command(name="server", description="about this discord server")
+    async def server(self, ctx: Context):
         about_embed = discord.Embed(
             title="about_this_server",
             color=0x51F349,
         )
-        about_embed.set_thumbnail(
-            url="img_link",
-        )
+        # about_embed.set_thumbnail(
+        #     url="img_link",
+        # )
         about_embed.add_field(name="about_server",
                               value="your_text",
         )
